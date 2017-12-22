@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSUserNotificationCenterDelegate>{
+    
+    __weak IBOutlet WebView *web;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,NSUserNotificationCenterDelegate>
-
+}
 
 @end
 

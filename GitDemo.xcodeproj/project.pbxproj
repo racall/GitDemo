@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E439F401FEC9D1C00D31ABB /* MMMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E439F3F1FEC9D1C00D31ABB /* MMMarkdown.framework */; };
+		4E439F411FEC9D1C00D31ABB /* MMMarkdown.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E439F3F1FEC9D1C00D31ABB /* MMMarkdown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4E439F431FECA13800D31ABB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E439F421FECA13800D31ABB /* WebKit.framework */; };
 		4EF39EE71FEA08FA005BCA7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF39EE61FEA08FA005BCA7E /* AppDelegate.m */; };
 		4EF39EE91FEA08FA005BCA7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF39EE81FEA08FA005BCA7E /* main.m */; };
 		4EF39EEB1FEA08FA005BCA7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF39EEA1FEA08FA005BCA7E /* Images.xcassets */; };
@@ -34,6 +37,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4EF39F3F1FEA616B005BCA7E /* ObjectiveGit.framework in Embed Frameworks */,
+				4E439F411FEC9D1C00D31ABB /* MMMarkdown.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E439F3F1FEC9D1C00D31ABB /* MMMarkdown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMMarkdown.framework; sourceTree = "<group>"; };
+		4E439F421FECA13800D31ABB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4EF39EE01FEA08FA005BCA7E /* GitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF39EE41FEA08FA005BCA7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF39EE51FEA08FA005BCA7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E439F431FECA13800D31ABB /* WebKit.framework in Frameworks */,
 				4EF39F3E1FEA616B005BCA7E /* ObjectiveGit.framework in Frameworks */,
+				4E439F401FEC9D1C00D31ABB /* MMMarkdown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,8 @@
 		4EF39ED71FEA08FA005BCA7E = {
 			isa = PBXGroup;
 			children = (
+				4E439F421FECA13800D31ABB /* WebKit.framework */,
+				4E439F3F1FEC9D1C00D31ABB /* MMMarkdown.framework */,
 				4EF39F3D1FEA616B005BCA7E /* ObjectiveGit.framework */,
 				4EF39EE21FEA08FA005BCA7E /* GitDemo */,
 				4EF39EF61FEA08FA005BCA7E /* GitDemoTests */,

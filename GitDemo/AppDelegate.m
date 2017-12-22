@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <ObjectiveGit/ObjectiveGit.h>
+#import <MMMarkdown/MMMarkdown.h>
 @interface AppDelegate (){
     GTRepository *repo;
 }
@@ -55,6 +56,13 @@
         GTReflogEntry *entry = [head.reflog entryAtIndex:i];
         NSLog(@"%@",[entry updatedOID]);
     }
+}
+- (IBAction)clicked:(NSButton *)sender {
+    NSError  *error;
+    NSString *markdown   = @"# Example\nWhat a library!";
+    NSString *htmlString = [MMMarkdown HTMLStringWithMarkdown:markdown error:&error];
+    NSLog(@"%@",htmlString);
+    [[web mainFrame] loadHTMLString:htmlString baseURL:nil];
 }
 
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didDeliverNotification:(NSUserNotification *)notification
